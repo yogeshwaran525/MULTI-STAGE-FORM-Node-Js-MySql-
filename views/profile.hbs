@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{!-- Load content in views folder header content --}}
+{{> header}}
+  <body>
+      {{!-- Load content in views folder navbar content --}}
+    {{> navbar }}
+    <div class="container-fluid">
+      <h2>User Profile</h2>
+      <img src="/images/profile.png" />
+      <div class="input-field">
+        <h3 class="name"> NAME:</h3>
+        <h3 class="name">{{user.NAME}}</h3>
+      </div>
+      <div class="input-field">
+        <h3 for="email" class="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EMAIL:</h3>
+        <h3>{{user.EMAIL}}</h3>
+      </div>
+    </div>
+  </body>
+</html>
